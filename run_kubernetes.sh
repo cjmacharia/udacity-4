@@ -9,7 +9,7 @@
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run mlproject --image=$dockerPath:latest
+kubectl run --image=cjmash/mlproject:latest ml
 
 
 # Step 3:
@@ -18,4 +18,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward mlproject 8000:80
+kubectl port-forward ml 8000:80
