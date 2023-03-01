@@ -5,11 +5,11 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerPath=<>
- dockerPath=cjmash/mlproject:latest
+ dockerPath=cjmash/mlproject
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run mlproject --image=$dockerPath
+kubectl run mlproject --image=$dockerPath:latest
 
 
 # Step 3:
